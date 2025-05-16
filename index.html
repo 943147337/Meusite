@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sônia Eventos - Decoração de Eventos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
-        :root { --primary: #e8c4c4; --secondary: #2d3748; --accent: #c4a484; }
-        body { font-family: 'Montserrat', sans-serif; }
-        .title-font { font-family: 'Playfair Display', serif; }
-        .hero { background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; }
-        .logo { font-family: 'Playfair Display', serif; position: relative; }
-        .logo:after { content: ''; position: absolute; bottom: -5px; left: 0; width: 100%; height: 2px; background: var(--primary); transform: scaleX(0); transform-origin: right; transition: transform 0.3s ease; }
-        .logo:hover:after { transform: scaleX(1); transform-origin: left; }
-        .gallery-item:hover { transform: scale(1.03); transition: all 0.3s ease; }
-        .testimonial-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(5px); }
-        .btn-primary { background-color: var(--primary); transition: all 0.3s ease; }
-        .btn-primary:hover { background-color: #d8b4b4; transform: translateY(-2px); }
-        .service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Início - Musa 3</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50">
+<body>
+  <header><h1>Musa 3</h1><p class="slogan">Sua festa com brilho e elegância</p></header>
+  
+<nav>
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="portfolio.html">Portfólio</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="index.html#contato">Contato</a></li>
+  </ul>
+</nav>
 
-<!-- Botão do WhatsApp -->
-<a href="https://wa.me/244943147337" target="_blank" 
-   class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50"
-   aria-label="Fale conosco pelo WhatsApp">
-    <i class="fab fa-whatsapp text-2xl"></i>
-</a>
+  <main>
+<section class="banner">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80" alt="Decoração festa" />
+  <div class="banner-text">
+    <h2>Transformamos sonhos em realidade</h2>
+    <p>Decoração personalizada para cada evento</p>
+    <a href="#contato" class="btn">Fale conosco</a>
+  </div>
+</section>
+<section class="intro">
+  <h2>Bem-vindo à Musa 3</h2>
+  <p>Somos especialistas em transformar eventos em momentos inesquecíveis.</p>
+</section>
+<section id="contato" class="contact">
+  <h2>Contato</h2>
+  <form action="https://formsubmit.co/lumboarnaldo7@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false" />
+    <label for="name">Nome:</label>
+    <input id="name" name="name" type="text" required />
+    <label for="email">E-mail:</label>
+    <input id="email" name="email" type="email" required />
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+</main>
+  
+<a href="https://wa.me/244943147337?text=Ol%C3%A1%2C+quero+saber+mais+sobre+decora%C3%A7%C3%A3o+da+Musa+3%21"
+   class="whatsapp-button" target="_blank">Fale no WhatsApp</a>
 
-<!-- Aqui você pode continuar com o conteúdo anterior da página como header, hero, serviços, galeria, etc. -->
-
+  <footer><p>© 2025 Musa 3 - Decoração de Eventos</p></footer>
 </body>
 </html>
