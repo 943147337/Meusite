@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffe6f0;
+  color: #333;
+}
+
+header {
+  background: black;
+  color: pink;
+  text-align: center;
+  padding: 2em;
+  box-shadow: 0 0 20px pink;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
